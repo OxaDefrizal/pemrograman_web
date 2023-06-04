@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/assets/four-svgrepo-com.svg">
+        <title>Praktikum 4 - JS lanjutan</title>
+    </head>
+    <body>
+        <h1 id="canva"></h1>
+        <h1 id="tahun"></h1>
+        <h1 id="math"></h1>
+        <h1 id="phi"></h1>
+        <h1 class="text"></h1>
+        <h1 class="query"></h1>
+        <h1 class="nama"></h1>
+        <h1 class="nama_umur"></h1>
+        <h1 class="operator"></h1>
+
+
+        <script>
+        //1. objek date ----------------------------------------------------------------
+        // membuat variabel tanggal
+        const tanggal = new Date();
+
+        // menampilkan tanggal di objek document dgn selektor id canva 
+        document.getElementById("canva").innerHTML = tanggal;
+        // menampilkan tahun di objek document dgn selektor id canva
+        document.getElementById("tahun").innerHTML = tanggal.getFullYear();
+
+        //2. objek math-----------------------------------------------------------------
+        // buat variabel bil pecahan 
+        let bilangan = 1.6;
+        // tampilkan bilangan di selektor id math
+        document.getElementById("math").innerHTML = bilangan + " dibulatkan menjadi " + Math.floor(bilangan);
+
+        // buat variabel constant
+        let konstanta = Math.PI;
+        document.getElementById("phi").innerHTML = konstanta;
+
+        //3. objek string---------------------------------------------------------------
+        const text = "HELLO WORLD";
+        document.getElementsByClassName('text')[0].innerHTML = text.toLowerCase();
+        document.querySelector('.query').innerHTML = text.toLowerCase();
+        
+        //4. Variabel Array ------------------------------------------------------------
+        //array 1 dimensi
+        let data_nama = ['sambo','mario','tedy']
+        document.querySelector('.nama').innerHTML = data_nama;
+        //array multi dimensi
+        let data_multi = [
+            ['sambo',55],
+            ['mario',25],
+            ['tedy',45]
+        ]
+        document.querySelector('.nama_umur').innerHTML = 'nama = ' + data_multi[0][0] + ' umur= ' + data_multi[0][1] + ' tahun';
+
+        //5. Operator ------------------------------------------------------------------
+        let bilangan_1 = 78;
+        let bilangan_2 = 56;
+        let hasil = bilangan_1 + bilangan_2;
+        document.querySelector('.operator').innerHTML = bilangan_1 +" + "+ bilangan_2 + " = "+hasil;
+
+        //tugas
+        // buatkan kalkulator serderhana 
+
+
+    </script>
+    </body>
+</html>
