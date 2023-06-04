@@ -1,0 +1,18 @@
+table thead th {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+tbody tr td{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.label{
+    background-color: greenyellow;
+    border-radius: 25px;
+    text-transform: lowercase;
+    padding: 5px;
+    color: #fff;
+    }
