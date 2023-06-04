@@ -1,6 +1,7 @@
 # project-p8
 
 This template should help get you started developing with Vue 3 in Vite.
+Project-p8 adalah tugas yang diberikan oleh dosen mata kuliah pemrograman web yang dimana mahasiswa di minta membuat website yang telah dibuat pada pertemuan 7 ke web baru yang telah menggunakan vue sebagai frameweork js
 
 ## Recommended IDE Setup
 
