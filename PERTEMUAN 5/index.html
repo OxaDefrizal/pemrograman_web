@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Praktikum 5 - Javascript Lanjutan</title>
+    </head>
+    <body>
+
+        <b>1. Materi Event Pertama</b>
+        <br>
+        <a onclick="eventSatu()" href="">Click Disini</a>
+        <br>
+
+        <b>2. Materi Event kedua</b>
+        <br>
+        <img onmouseover="gantiGambar(this)" width="350px"
+            onmouseout="gantiGambarDua(this)" src="img/1.jpg" alt="">
+        <br>
+
+        <b>3. Operator</b>
+        <br>
+        username:
+        <input id="username" type="text">
+        <br>
+        password:
+        <input id="password" type="password">
+        <br>
+        <input onclick="cekLogin()" id="login" type="button" value="login">
+        <br>
+
+        masukan nilai anda!
+        <input oninput="cekNilai(this)" placeholder="inputkan nilai disini"
+            type="text" name="" id="nilai">
+        <br>
+        <label for="" id="info"></label>
+
+        <h3 id="namahari"></h3>
+        <br>
+        <b>4. Perulangan</b>
+        <br>
+        <div id="namaOrang">
+
+        </div>
+        <script src="js/App.js"></script>
+    </body>
+</html>
